@@ -1,0 +1,44 @@
+.Home {
+  height:100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pageInfoContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 500px;
+  width: 80%;
+  /* flex: 1 0 50%; */
+}
+
+.infoImage {
+  /* height: 200px; */
+  /* flex-basis: 50%; */
+  flex: 1 0 50%;
+
+}
+
+.infoPanel {
+  text-align: left;
+  flex: 1 0 50%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.textContainer {
+  padding: 12px;
+  width: 100%;
+}
+
+.textContainer > h1 {
+  flex: 1 0 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.infoPanel > p {
+}

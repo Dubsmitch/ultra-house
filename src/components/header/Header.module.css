@@ -1,0 +1,70 @@
+.header {
+  height: 80px;
+  z-index: 2;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-self: center;
+  background-color: black;
+}
+
+
+.header span {
+  margin-left: 10px;
+  font-weight: 800;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.centerHeader {
+  height: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+}
+
+.logoContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer > img {
+  height: 70%;
+}
+
+.centerLogo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.centerLogo img {
+  height: 70% !important;
+  width: 9em;
+}
+
+.navigateContainer {
+  margin-right: 60px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    height: 80px;
+    z-index: 2;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-self: center;
+    background-color: black;
+  } 
+
+  .logoContainer {
+    justify-content: space-between;
+    display: flex;
+    width: 100%; 
+  }
+}

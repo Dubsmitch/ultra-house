@@ -1,0 +1,23 @@
+.App {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.navMenu {
+  display: flex;
+  position: fixed;
+  width: 10%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.Dash {
+  height: 200%;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 10vw;
+  overflow: scroll;
+  background-color: rgb(237, 237, 237);
+}

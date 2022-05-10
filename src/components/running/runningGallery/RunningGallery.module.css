@@ -1,0 +1,17 @@
+
+.RunningGallery {
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.galleryContainer {
+  width: 50%;
+  align-self: center;}
+
+.galleryImage {
+  height: 50px;
+  width: 50px;
+}

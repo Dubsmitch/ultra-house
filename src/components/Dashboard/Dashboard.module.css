@@ -1,0 +1,96 @@
+.Dashboard {
+  /* height: 100%; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  flex-direction: row;
+}
+
+.imageContainer {
+  display: flex;
+  margin-top: 17%;
+  flex-direction: row;
+  justify-content: end;
+  transform: rotateX(0);
+  height:120px;
+}
+
+.imageOverlay {
+  top: 0%;
+  left: 0px;
+  position: absolute;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(130,180,241,1) 28%, rgba(130,180,241,1) 46%, rgba(130,180,241,1) 51%, rgba(130,180,241,0) 59%);  height: 100%;
+  width: 100%;
+}
+.dashboardImage {
+  width:50%;
+  height: auto;
+}
+
+.imageSpacer {
+  /* flex-basis: 50%;
+  background-color: black; */
+}
+
+.titleContainer {
+  padding-left: 60px;
+  flex-basis: 50%;
+  /* background-color: orange; */
+  text-align: left;
+}
+
+.titleContainer > h1 {
+  font-size: 4em;
+}
+
+.titleContainer > h4 {
+  font-weight: 200;
+}
+
+.navContainer {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  /* background-color: blue; */
+  text-align: left;
+  flex-basis: 50%;
+  padding-right: 60px;
+}
+
+.navSelection {
+  /* border-bottom: 2px solid #B0B0B0; */
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 10px; */
+}
+
+.navSelection > span {
+  font-size: 1.5em;
+}
+
+.navDisplayContainer {
+  width: 700px;
+  display: flex;
+}
+
+.NavChoice {
+  border-bottom: 2px solid #B0B0B0;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.NavChoice > span {
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.navLink{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
