@@ -5,6 +5,7 @@ import Running from './components/running/Running';
 import Dashboard from './components/Dashboard/Dashboard';
 import LightBoxTwo from './components/lightBoxTwo/LightBoxTwo';
 import Events from './components/events/Events';
+import SortVisualizer from './components/sortVisualizer/SortVisualizer';
 
 export interface RouteConfigItem {
   path: string;
@@ -37,6 +38,11 @@ export const appRoutes: RouteConfigItem[] = [
     component: Events,
     linkText: 'Events',
     path: '/Events',
+  },
+  {
+    component: SortVisualizer,
+    linkText: 'Sort Visualizer',
+    path: '/SortVisualizer',
   },
 ];
 
