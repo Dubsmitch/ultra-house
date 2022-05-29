@@ -86,6 +86,7 @@ export class Dashboard
               <img 
                 className={styles.dashboardImage}
                 src={Timpe}
+                alt='Timpe'
               />
             </div>
           )}
@@ -124,8 +125,6 @@ export const NavChoice: React.FC<NavChoiceProps> = ({selected, selectDropdown, i
         style={selected ? {
           marginBottom: '10px'
         } : {
-          // marginBottom: '10px'
-
         }}
       >
         <span>{route.linkText}</span>
