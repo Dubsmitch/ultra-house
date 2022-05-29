@@ -4,25 +4,7 @@ import BarleyRoutes from "../../Routes";
 import Header from '../header/Header';
 import './App.css';
 import { Dash } from '../dash/Dash';
-
-function useWindowSize() {
-  const [windowSize, setWindowSize] = useState({
-    width: undefined,
-    height: undefined,
-  });
-  useEffect(() => {
-    function handleResize() {
-      setWindowSize({
-        width: window.visualViewport.width,
-        height: window.innerHeight,
-      });
-    }
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-  return windowSize;
-}
+import { useWindowSize } from '../../hooks';
 
 function App() {  
   const size = useWindowSize();

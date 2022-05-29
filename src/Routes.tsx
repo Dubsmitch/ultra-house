@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Routes} from "react-router-dom";
 import Home from './components/Home/home';
 import Running from './components/running/Running';
-import Dashboard from './components/Dashboard/Dashboard';
+import Dashboard from './components/dashboard/Dashboard';
 import LightBoxTwo from './components/lightBoxTwo/LightBoxTwo';
 import Events from './components/events/Events';
 import SortVisualizer from './components/sortVisualizer/SortVisualizer';

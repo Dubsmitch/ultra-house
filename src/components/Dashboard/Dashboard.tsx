@@ -54,8 +54,8 @@ export class Dashboard
 
   renderNavChoices = () => {
     const {selectedIndex} = this.state;
-    return appRoutes.map((route, index) => {
-      return (
+    return appRoutes.map((route, index) => {  
+      return route.linkText !== 'Dashboard' && (
         <NavChoice
           key={route.linkText}
           selected = {selectedIndex === index}
