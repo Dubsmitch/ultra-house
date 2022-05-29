@@ -1,10 +1,10 @@
 .react-calendar {
   /* display: flex;
   flex-direction: column; */
-  height: 80%;
+  flex-grow: 1;
   width: 80%;
   border: none;
-  box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 50%);
+  box-shadow: 5px -5px 15px 5px rgb(0 0 0 / 50%);
   border-radius: 10px;
 }
 
