@@ -19,11 +19,11 @@ export const appRoutes: RouteConfigItem[] = [
     linkText: 'Dashboard',
     path: '/',
   },
-  {
-    component: Home,
-    linkText: 'Home',
-    path: '/home',
-  },
+  // {
+  //   component: Home,
+  //   linkText: 'Home',
+  //   path: '/home',
+  // },
   // {
   //   component: Running,
   //   linkText: 'Running',
