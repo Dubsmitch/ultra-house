@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Routes} from "react-router-dom";
 import Home from './components/Home/home';
 import Running from './components/running/Running';
-import Dashboard from './components/dashboard/Dashboard';
+import Dashboard from './components/Dashboard/Dashboard';
 import LightBoxTwo from './components/lightBoxTwo/LightBoxTwo';
 import Events from './components/events/Events';
 import SortVisualizer from './components/sortVisualizer/SortVisualizer';
@@ -24,26 +24,26 @@ export const appRoutes: RouteConfigItem[] = [
     linkText: 'Home',
     path: '/home',
   },
-  {
-    component: Running,
-    linkText: 'Running',
-    path: '/running',
-  },
-  {
-    component: LightBoxTwo,
-    linkText: 'Pixel Box',
-    path: '/PixelBox',
-  },
+  // {
+  //   component: Running,
+  //   linkText: 'Running',
+  //   path: '/running',
+  // },
+  // {
+  //   component: LightBoxTwo,
+  //   linkText: 'Pixel Box',
+  //   path: '/PixelBox',
+  // },
   {
     component: Events,
     linkText: 'Events',
     path: '/Events',
   },
-  {
-    component: SortVisualizer,
-    linkText: 'Sort Visualizer',
-    path: '/SortVisualizer',
-  },
+  // {
+  //   component: SortVisualizer,
+  //   linkText: 'Sort Visualizer',
+  //   path: '/SortVisualizer',
+  // },
 ];
 
 interface BarleyRoutesProps {

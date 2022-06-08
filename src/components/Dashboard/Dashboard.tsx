@@ -60,10 +60,13 @@ export class Dashboard
       <div className={styles.Dashboard}>
         <div className={styles.titleContainer}>
           <h1>
-            WHO I AM
+            THE ULTRA HOUSE
+          </h1>
+          <h1>
+            DURANGO
           </h1>
           <h4>
-            Programmer, Mountain Runner, Human
+            Durango, Colorado
           </h4>
           {size.width > 1000 && (
 
