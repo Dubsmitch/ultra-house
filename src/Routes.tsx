@@ -6,7 +6,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import LightBoxTwo from './components/lightBoxTwo/LightBoxTwo';
 import Events from './components/events/Events';
 import SortVisualizer from './components/sortVisualizer/SortVisualizer';
-
+import Store from './components/store/Store';
 export interface RouteConfigItem {
   path: string;
   component: any;
@@ -35,10 +35,17 @@ export const appRoutes: RouteConfigItem[] = [
   //   path: '/PixelBox',
   // },
   {
+    component: Store,
+    linkText: 'Store',
+    path: '/Store',
+  },
+
+  {
     component: Events,
     linkText: 'Events',
     path: '/Events',
   },
+
   // {
   //   component: SortVisualizer,
   //   linkText: 'Sort Visualizer',
