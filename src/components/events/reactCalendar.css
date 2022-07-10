@@ -1,60 +1,116 @@
-.react-calendar {
-  /* display: flex;
-  flex-direction: column; */
-  flex-grow: 1;
-  width: 80%;
-  border: none;
-  box-shadow: 5px -5px 15px 5px rgb(0 0 0 / 50%);
-  border-radius: 10px;
-}
+/* for larger screens ( longer width ) */
 
-.react-calendar__viewContainer {
-  height: calc(100% - 44px - 1em);
-}
-
-.react-calendar__month-view {
-  display: flex;
-  height: 100%;
-}
-
-.react-calendar__month-view > div > :first-child {
-  width: 100%;
-  height: 100%;
-}
-
-/* .react-calendar * {
-  flex-direction: column;
-    display: flex;
+  .react-calendar {
     flex-grow: 1;
+    width: 80%;
+    border: none;
+    box-shadow: 5px -5px 15px 5px rgb(0 0 0 / 50%);
+    border-radius: 10px;
+    height: 80%;
+  }
+
+  .react-calendar__viewContainer {
+    height: calc(100% - 44px - 1em);
+
+  }
+
+  .react-calendar__month-view {
+    display: flex;
+    height: 100%;
     width: 100%;
-} */
+  }
 
-.react-calendar__month-view__weekdays {
-  display: flex;
-  flex-direction: row !important;
-  height: unset !important;
-  background-color: rgb(6, 152, 114);
-  color: rgb(228, 169, 95);
-}
+  .react-calendar__month-view > div {
+    width: 100%;
+    height: 100%;
+  }
 
-.react-calendar__month-view__days {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  height: calc(100% - 30px) !important;
-  border: 1px solid rgb(27, 65, 109);
-}
+  .react-calendar__month-view > div > :first-child {
+    width: 100%;
+    height: 100%;
+  }
 
-.react-calendar__tile{
-  border: 1px solid rgb(27, 65, 109) !important;
-  color: rgb(23, 98, 131);
-  background-color: rgb(228, 218, 170);
-  overflow-y: scroll;
-  height: 16.7%;
-}
+  .react-calendar__month-view__weekdays {
+      display: flex;
+      height: 3em;
+      font-size: .75em;
+  }
 
-.react-calendar__tile--active {
-  background-color: rgb(6, 152, 114) !important;
-  color: rgb(228, 218, 170);
-  overflow-y: scroll;
+  .react-calendar__month-view__days {
+      height: calc(100% - 3em);
+      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+  }
+
+  .react-calendar__tile{
+    color: rgb(23, 98, 131);
+    overflow-y: scroll;
+    height: 16.7%;
+  }
+
+  .react-calendar__tile--active {
+    background-color: white !important;
+    overflow-y: scroll;
+    border: 2px solid black !important; 
+    border-radius: 2px;
+  }
+
+
+@media screen and (max-width: 800px) {
+  /* for smaller sized Screens */
+  .react-calendar {
+    background-color: red;
+    flex-grow: 1;
+    width: 80%;
+    border: none;
+    box-shadow: 5px -5px 15px 5px rgb(0 0 0 / 50%);
+    border-radius: 10px;
+  }
+
+  .react-calendar__viewContainer {
+    height: calc(100% - 44px - 1em);
+
+  }
+
+  .react-calendar__month-view {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+  .react-calendar__month-view > div {
+    width: 100%;
+    height: 100%;
+  }
+
+  .react-calendar__month-view > div > :first-child {
+    width: 100%;
+    height: 100%;
+  }
+
+  .react-calendar__month-view__weekdays {
+      display: flex;
+      height: 3em;
+      font-size: .75em;
+  }
+
+  .react-calendar__month-view__days {
+      height: calc(100% - 3em);
+      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+  }
+
+  .react-calendar__tile{
+    color: rgb(23, 98, 131);
+    overflow-y: scroll;
+    height: 16.7%;
+  }
+
+  .react-calendar__tile--active {
+    background-color: white !important;
+    overflow-y: scroll;
+    border-bottom: 2px solid black !important; 
+  }
 }

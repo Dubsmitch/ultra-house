@@ -1,0 +1,14 @@
+.EventModuleContainer {
+  transform: rotate(0deg);
+}
+
+.EventModuleContainer > button {
+  position: fixed; 
+  top: 0;
+}
+
+.filterContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

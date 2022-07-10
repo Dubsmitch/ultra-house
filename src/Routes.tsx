@@ -19,21 +19,6 @@ export const appRoutes: RouteConfigItem[] = [
     linkText: 'Dashboard',
     path: '/',
   },
-  // {
-  //   component: Home,
-  //   linkText: 'Home',
-  //   path: '/home',
-  // },
-  // {
-  //   component: Running,
-  //   linkText: 'Running',
-  //   path: '/running',
-  // },
-  // {
-  //   component: LightBoxTwo,
-  //   linkText: 'Pixel Box',
-  //   path: '/PixelBox',
-  // },
   {
     component: Store,
     linkText: 'Store',
@@ -45,13 +30,7 @@ export const appRoutes: RouteConfigItem[] = [
     linkText: 'Events',
     path: '/Events',
   },
-
-  // {
-  //   component: SortVisualizer,
-  //   linkText: 'Sort Visualizer',
-  //   path: '/SortVisualizer',
-  // },
-];
+]
 
 interface BarleyRoutesProps {
   props: {size: { width: number, height: number; };}
@@ -65,12 +44,14 @@ const BarleyRoutes: React.FC<BarleyRoutesProps> = ({props}) => {
 
   const listRoutes = appRoutes.map((route, index) => {
     const Component = route.component;
+    console.log('from routes,', );
     return (
-      // <Route path={route.path} element={<Component/>}/>
       <Route
         key={route.linkText}
         element={
           <Component
+            size={props.size}
+            routeProps={props}
             {...props}
           />}
         path={route.path}

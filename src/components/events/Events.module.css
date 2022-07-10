@@ -4,8 +4,13 @@
   width: calc(100% - 40px);
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+}
+
+.calendarContainer {
+  width: 50%;
+  height: 80%;
 }
 
 .selectedEventsContainer {
@@ -15,4 +20,14 @@
   border-bottom-right-radius: 10px;
   overflow-y: scroll;
   flex-basis: 20%;
+}
+
+.eventContainer {
+  width: 50%;
+  height: 80%;
+  overflow-y: scroll;
+  padding: 5px;
+  box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 50%);
+  border-radius: 10px;
+  background-color: #11111126
 }
